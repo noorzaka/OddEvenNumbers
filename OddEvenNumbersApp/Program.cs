@@ -12,15 +12,11 @@ static void printNumbers(string title, IEnumerable<int> numbers)
     Console.WriteLine($"]");
 }
 
-static bool IsEven(int number)
-{
-    return number % 2 == 0;
-}
+static bool IsEven(int number) => number % 2 == 0;
 
-static bool IsOdd(int number)
-{
-    return number % 2 != 0;
-}
+
+static bool IsOdd(int number) => !IsEven(number);
+
 
 int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
